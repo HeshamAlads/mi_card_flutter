@@ -11,13 +11,26 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Center(
-            child: Text(
-              'MY CARD',
-              style: TextStyle(
-                  fontFamily: 'Pacifico',
-                  fontSize: 28.0,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
+            child: Container(
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 50.0,
+                    backgroundImage: AssetImage('images/log.png'),
+                  ),
+                  SizedBox(
+                    width: 30.0,
+                  ),
+                  Text(
+                    'MY CARD',
+                    style: TextStyle(
+                        fontFamily: 'Pacifico',
+                        fontSize: 28.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
             ),
           ),
           backgroundColor: Colors.teal.shade300,
